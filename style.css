@@ -140,7 +140,7 @@ section {
 .player img {
   width: 100%;
 }
-.player h2{
+.player h2 {
   margin-bottom: 8px;
 }
 
@@ -220,9 +220,8 @@ section {
 .contact-header {
   text-align: center;
 }
-.contact-header h1{
+.contact-header h1 {
   margin-bottom: 10px;
-
 }
 .contact-form {
   display: flex;
@@ -271,7 +270,7 @@ footer i {
 }
 .footer-logo {
   width: 70%;
-  margin: auto
+  margin: auto;
 }
 .footer-logo img {
   width: 100%;
@@ -281,6 +280,71 @@ footer i {
 }
 
 /* Responsive Css */
+
+@media only screen and (max-width: 992px) {
+  .container {
+    width: 95%;
+  }
+  .navbar ul {
+    display: none;
+  }
+  .navbar::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f0c9";
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+  }
+  .menu-icons {
+    width: 80px;
+    padding: 5px 0;
+  }
+  .menu-icons i {
+    font-size: 16px;
+  }
+  .menu-icons {
+    font-size: 16px;
+  }
+  .slide-info h1 {
+    color: #fff;
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .header-slide {
+    display: block;
+  }
+  .slide-info {
+    width: 100%;
+  }
+  .slide-img {
+    width: 100%;
+  }
+  .players {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .policy-wrap {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .highlight-info h1 {
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 20px;
+  }
+  .highlight-info .link-button {
+    margin-bottom: 20px;
+  }
+  .contact-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+  }
+  .contact-form input[type="submit"] {
+    width: 25%;
+  }
+}
+
 @media only screen and (max-width: 600px) {
   .container {
     width: 95%;
@@ -335,70 +399,6 @@ footer i {
   .highlight-img {
     width: 100%;
   }
-  .highlight-info h1 {
-    font-size: 40px;
-    line-height: 50px;
-    margin-bottom: 20px;
-  }
-  .highlight-info .link-button {
-    margin-bottom: 20px;
-  }
-  .contact-form {
-    display: flex;
-    justify-content: center;
-    margin-top: 5%;
-  }
-  .contact-form input[type="submit"] {
-    width: 25%;
-  }
-}
-
-@media only screen and (max-width: 992px) {
-  .container {
-    width: 95%;
-  }
-  .navbar ul {
-    display: none;
-  }
-  .navbar::before {
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    content: "\f0c9";
-    font-size: 30px;
-    color: #fff;
-    cursor: pointer;
-  }
-  .menu-icons {
-    width: 80px;
-    padding: 5px 0;
-  }
-  .menu-icons i {
-    font-size: 16px;
-  }
-  .menu-icons {
-    font-size: 16px;
-  }
-  .slide-info h1 {
-    color: #fff;
-    font-size: 40px;
-    line-height: 40px;
-  }
-  .header-slide {
-    display: block;
-  }
-  .slide-info {
-    width: 100%;
-  }
-  .slide-img {
-    width: 100%;
-  }
-  .players {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .policy-wrap {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
   .highlight-info h1 {
     font-size: 40px;
     line-height: 50px;
